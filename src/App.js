@@ -3,10 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  showAlert() {
+    alert("now you know how to handle onclick event");
+  }
+
   render() {
     return (
       <div>
-        <button >Hello world!</button>
+        <button onClick={this.showAlert}>Hello world!</button>
         <span>number : 0</span>
       </div>
       // <div className="App">
