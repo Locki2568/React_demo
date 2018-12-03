@@ -3,15 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  state ={number : 0}
+  state ={number : 1}
   
   showAlert() {
     alert("now you know how to handle onclick event");
   }
 
   updateNumber = () =>{
-    this.state.number++;
-    this.setState({number : this.state.number})
+    let newNumber =  this.props.onClickWho(this.state.number)
+    //this.state.number++;
+    //this.setState({number : this.state.number})
+    this.setState({number : newNumber});
   }
 
   render() {
