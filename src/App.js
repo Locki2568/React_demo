@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.updateNumber}>Hello world!</button>
+        <button onClick={this.updateNumber}>Hello world! {this.props.who}</button>
         <span>{this.state.number}</span>
       </div>
       // <div className="App">
