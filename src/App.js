@@ -10,7 +10,8 @@ class App extends Component {
   }
 
   updateNumber = () =>{
-    this.setState({number : 1})
+    this.state.number++;
+    this.setState({number : this.state.number})
   }
 
   render() {
